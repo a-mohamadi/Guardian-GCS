@@ -12,8 +12,6 @@
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-0078D4?logo=windows&logoColor=white)](#requirements)
 [![Localization](https://img.shields.io/badge/UI-English%20%7C%20Persian%20(RTL)-informational)](#localization)
 
-[Download](#installation) · [Features](#features) · [Screenshots](#screenshots) · [Report an Issue](https://github.com/a-mohamadi/Guardian-GCS/issues) · [License](#license)
-
 <img src="docs/media/hero.png" alt="Guardian GCS — main window" width="860">
 
 </div>
@@ -43,7 +41,6 @@ The application ships with complete **English and Persian** localization, includ
 - [Source Code Availability](#source-code-availability)
 - [Support and Issue Reporting](#support-and-issue-reporting)
 - [License](#license)
-- [Acknowledgments](#acknowledgments)
 
 <br>
 
