@@ -1,137 +1,89 @@
-# Guardian GCS
+<p align="center">
+  <img src="docs/media/icon.png" alt="Guardian GCS" width="96">
+</p>
 
-**Modern Windows Ground Control Station for robotic systems**
+<h1 align="center">Guardian GCS</h1>
 
-[![Release](https://img.shields.io/github/v/release/a-mohamadi/Guardian-GCS?include_prereleases&style=flat-square)](https://github.com/a-mohamadi/Guardian-GCS/releases)
-[![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-0078D4?style=flat-square&logo=windows&logoColor=white)](https://github.com/a-mohamadi/Guardian-GCS/releases)
-[![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
-[![UI](https://img.shields.io/badge/UI-English%20%7C%20Persian-blue?style=flat-square)](https://github.com/a-mohamadi/Guardian-GCS)
+<p align="center">
+  Windows ground control station for operating and monitoring a remote robot.
+</p>
 
-Guardian GCS is a WPF-based desktop application designed for operators who require a reliable, single-window interface to monitor and control remote robots. It integrates live telemetry, interactive mapping, video, teleoperation, event logging, and system management into a coherent workspace, with native support for both English and Persian (including full right-to-left layout).
+<p align="center">
+  <a href="https://github.com/a-mohamadi/Guardian-GCS/releases/latest"><img src="https://img.shields.io/github/v/release/a-mohamadi/Guardian-GCS?include_prereleases" alt="Release"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="License"></a>
+  <img src="https://img.shields.io/badge/platform-Windows%2010%20%2F%2011-0078D4?logo=windows&logoColor=white" alt="Windows">
+  <img src="https://img.shields.io/badge/UI-English%20%7C%20Persian-informational" alt="Languages">
+</p>
 
-The application currently ships with a built-in simulator so the complete interface can be evaluated without physical hardware. The underlying connection interfaces are prepared for real TCP, UDP, or serial transports.
+<p align="center">
+  <img src="docs/media/hero.png" alt="Guardian GCS main window" width="920">
+</p>
 
----
+Guardian GCS is a WPF desktop application that puts live telemetry, map, camera, teleoperation, event logging, and settings in a single operator window. English and Persian (including right-to-left layout) are supported out of the box.
 
-## Screenshots
-
-| Dashboard | Interactive Map |
-|-----------|-----------------|
-| ![Dashboard](docs/screenshots/01-dashboard.png) | ![Map](docs/screenshots/02-map.png) |
-
-| Live Camera | Telemetry & Charts |
-|-------------|--------------------|
-| ![Camera](docs/screenshots/03-camera.png) | ![Telemetry](docs/screenshots/04-telemetry.png) |
-
-| Event Log | Settings & Themes |
-|-----------|-------------------|
-| ![Event Log](docs/screenshots/05-event-log.png) | ![Settings](docs/screenshots/06-settings.png) |
-
-> Add high-quality screenshots to the `docs/screenshots/` directory using the filenames shown above.
-
----
-
-## Key Capabilities
-
-- **Live Dashboard** — Real-time display of battery, speed, signal strength, operating mode, depth, voltage, current, motor status and GPS
-- **Interactive Map** — WebView2-powered map panel with robot position, home point, route planning and fullscreen mode
-- **Live Camera** — Video feed with snapshot capture, recording controls and fullscreen support
-- **Telemetry** — Recording, replay and expandable charts for detailed analysis
-- **Event Log** — Searchable, severity-filtered log with export functionality
-- **Teleoperation** — Configurable keyboard and gamepad bindings with Hold-to-Drive, Drive-Arm and deadzone safety controls
-- **Security** — Application lock, password management and user session handling
-- **Localization** — Full English and Persian (Farsi) support with automatic right-to-left layout
-- **Themes** — Dark, Light, Glass and High Contrast themes
-- **Demo Mode** — Complete simulator for immediate exploration without connected hardware
-
----
+This public beta ships with a built-in simulator so the full interface can be used without a physical robot. Interfaces for a real TCP / UDP / serial transport are in place; that transport is not implemented yet.
 
 ## Download
 
-**Current release:** [v0.1.0 Beta](https://github.com/a-mohamadi/Guardian-GCS/releases/tag/v0.1.0-beta)
-
 | Asset | Platform | Size |
-|-------|----------|------|
+| --- | --- | --- |
 | [Guardian_GCS.Setup.v0.1.0.beta.exe](https://github.com/a-mohamadi/Guardian-GCS/releases/download/v0.1.0-beta/Guardian_GCS.Setup.v0.1.0.beta.exe) | Windows 10 / 11 | ~11.2 MB |
 
-Install and launch. No additional runtime installation is required on modern Windows systems.
+All builds are published on the [Releases](https://github.com/a-mohamadi/Guardian-GCS/releases) page.
 
----
+## Screenshots
 
-## System Requirements
+<p align="center">
+  <img src="docs/media/dashboard.png" alt="Live dashboard" width="48%">
+  <img src="docs/media/map.png" alt="Map panel" width="48%">
+</p>
+<p align="center">
+  <img src="docs/media/camera.png" alt="Camera panel" width="48%">
+  <img src="docs/media/telemetry.png" alt="Telemetry charts" width="48%">
+</p>
+<p align="center">
+  <img src="docs/media/event-log.png" alt="Event log" width="48%">
+  <img src="docs/media/settings.png" alt="Settings and themes" width="48%">
+</p>
 
-- Windows 10 or Windows 11 (64-bit)
-- Approximately 50 MB free disk space
-- .NET Framework 4.7.2 (included with current Windows installations)
+## Features
 
----
+- **Dashboard** — battery, speed, signal, mode, depth, voltage, current, motor and GPS status, emergency stop, and safety reset
+- **Map** — WebView2 map with robot / home / route state, plus a fullscreen view
+- **Camera** — live feed with snapshot, recording, and fullscreen
+- **Telemetry** — record, replay, and expandable charts
+- **Event log** — search, severity filter, export, and notification priority
+- **Teleoperation** — keyboard and gamepad bindings, drive-arm, hold-to-drive, deadzone, turn scale, and gimbal keys
+- **Safety** — hold-to-drive, stop-on-disconnect, motion lock while panels are open
+- **Security** — optional app lock, password change, and session management
+- **Settings** — language and region, theme, fonts, sounds, storage paths, backup and restore
+- **Localization** — `en-US` and `fa-IR`, with additional `Languages/<culture>.json` packs discovered at runtime
+- **Themes** — Dark, Light, Glass, High Contrast
+- **Demo mode** — `FakeRobotConnection` / `FakeServerConnection` so the UI runs without hardware
 
-## Technical Overview
+## Requirements
 
-| Area | Implementation |
-|------|----------------|
-| UI Framework | WPF (.NET Framework 4.7.2) |
-| Language | C# |
-| Map & Charts | Embedded HTML via Microsoft.Web.WebView2 |
-| Data Serialization | System.Text.Json |
-| Fonts | Inter (Latin), Vazirmatn (Persian) |
-| Architecture | MVVM (Views / ViewModels / Services) |
+- Windows 10 or Windows 11
+- .NET Framework 4.7.2 (included with current Windows)
 
----
+## Status
 
-## Getting Started from Source
+v0.1.0 is an early public beta.
 
-1. Clone the repository
-2. Open `Guardian-GCS.sln` in Visual Studio 2022 with the **.NET desktop development** workload
-3. Restore NuGet packages (`Microsoft.Web.WebView2`, `System.Text.Json`)
-4. (Optional) Run `scripts\INSTALL_APP_FONTS.bat` to install the recommended font families
-5. Build and run
+| Ready | Not ready |
+| --- | --- |
+| Full UI in Demo Mode | Real robot transport (TCP / UDP / serial) |
+| Local install and bilingual UI | Production-grade server connectivity |
 
-The application starts in Demo Mode by default. Connection parameters can be adjusted in `appsettings.json` or through the in-application User page.
+## Reporting issues
 
----
+Open an [issue](https://github.com/a-mohamadi/Guardian-GCS/issues) and include:
 
-## Configuration
-
-Runtime configuration is managed through `appsettings.json` and covers:
-
-- Robot host, port and connection mode
-- Connection timeouts, heartbeat interval and auto-reconnect behaviour
-- Keyboard and gamepad bindings together with safety options
-- Language, region, theme, fonts, notifications and storage paths
-
----
-
-## Project Status
-
-This is an early public beta release.
-
-- Demo Mode is fully operational and uses simulated data
-- Real robot transport (TCP / UDP / serial) and portions of the server connectivity layer remain under active development
-- Stability and feature completeness will improve in subsequent releases
-
-Feedback is encouraged and directly influences the development roadmap.
-
----
-
-## Feedback & Issues
-
-Bug reports, unexpected behaviour and feature requests are welcome.  
-Please open an [Issue](https://github.com/a-mohamadi/Guardian-GCS/issues) and include:
-
-- Clear steps to reproduce
-- Expected versus actual behaviour
+- Steps to reproduce
+- Expected vs actual behavior
 - Windows version
-- Whether Demo Mode or a real connection was used
-
----
+- Demo Mode or a real connection
 
 ## License
 
-Guardian GCS is distributed under the [MIT License](LICENSE).
-
----
-
-**Abolfazl Mohamadi**  
-Engineer · Builder · Designer  
-Robotics · Electronics · Software · R&D
+[MIT](LICENSE)
