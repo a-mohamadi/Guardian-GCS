@@ -173,11 +173,6 @@ This project is distributed under the [MIT License](LICENSE).
 
 <br>
 
-## Acknowledgments
-
-- [Inter](https://github.com/rsms/inter) — Latin typeface
-- [Vazirmatn](https://github.com/rastikerdar/vazirmatn) — Persian typeface
-
 <div align="center">
 <sub>© 2026 Guardian GCS. All rights reserved.</sub>
 </div>
