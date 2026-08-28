@@ -6,8 +6,8 @@
 
 **A modern Windows Ground Control Station for monitoring, controlling, and managing robotic systems.**
 
-[![Release](https://img.shields.io/github/v/release/a-mohamadi/Guardian-GCS?include_prereleases&label=release)](https://github.com/a-mohamadi/Guardian-GCS/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/a-mohamadi/Guardian-GCS/total)](https://github.com/a-mohamadi/Guardian-GCS/releases/latest)
+[![Release](https://img.shields.io/github/v/release/ab-mohammadi/Guardian-GCS?include_prereleases&label=release)](https://github.com/ab-mohammadi/Guardian-GCS/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/ab-mohammadi/Guardian-GCS/total)](https://github.com/ab-mohammadi/Guardian-GCS/releases/latest)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-0078D4?logo=windows&logoColor=white)](#requirements)
 [![Localization](https://img.shields.io/badge/UI-English%20%7C%20Persian%20(RTL)-informational)](#localization)
@@ -97,9 +97,9 @@ The application ships with complete **English and Persian** localization, includ
 
 | Release | File | Platform | Size |
 |---|---|---|---|
-| [v0.1.0-beta](https://github.com/a-mohamadi/Guardian-GCS/releases/tag/v0.1.0-beta) *(latest)* | [Guardian_GCS.Setup.v0.1.0.beta.exe](https://github.com/a-mohamadi/Guardian-GCS/releases/download/v0.1.0-beta/Guardian_GCS.Setup.v0.1.0.beta.exe) | Windows 10 / 11 (x64) | ~11.2 MB |
+| [v0.1.0-beta](https://github.com/ab-mohammadi/Guardian-GCS/releases/tag/v0.1.0-beta) *(latest)* | [Guardian_GCS.Setup.v0.1.0.beta.exe](https://github.com/ab-mohammadi/Guardian-GCS/releases/download/v0.1.0-beta/Guardian_GCS.Setup.v0.1.0.beta.exe) | Windows 10 / 11 (x64) | ~11.2 MB |
 
-All current and past builds are available on the [Releases](https://github.com/a-mohamadi/Guardian-GCS/releases) page.
+All current and past builds are available on the [Releases](https://github.com/ab-mohammadi/Guardian-GCS/releases) page.
 
 **Setup steps**
 
@@ -149,13 +149,13 @@ The current installer is not yet code-signed. As a result, Windows SmartScreen m
 
 ## Source Code Availability
 
-This repository currently distributes pre-built Windows installers and supporting documentation. The application source is not public while the project is under active development. Bug reports and feature requests are welcomed and tracked through [Issues](https://github.com/a-mohamadi/Guardian-GCS/issues).
+This repository currently distributes pre-built Windows installers and supporting documentation. The application source is not public while the project is under active development. Bug reports and feature requests are welcomed and tracked through [Issues](https://github.com/ab-mohammadi/Guardian-GCS/issues).
 
 <br>
 
 ## Support and Issue Reporting
 
-To report a problem, please open an [issue](https://github.com/a-mohamadi/Guardian-GCS/issues) and include:
+To report a problem, please open an [issue](https://github.com/ab-mohammadi/Guardian-GCS/issues) and include:
 
 - Steps to reproduce the issue
 - Expected behavior vs. observed behavior
