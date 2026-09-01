@@ -66,7 +66,7 @@ The application ships with complete **English and Persian** localization, includ
 
 | Release | File | Platform | Size |
 |---------|------|----------|------|
-| [v0.1.1-beta](https://github.com/ab-mohammadi/Guardian-GCS/releases/tag/v0.1.2-beta) *(latest)* | [Download Guardian GCS v0.1.2-beta](https://github.com/ab-mohammadi/Guardian-GCS/releases/download/v0.1.2-beta/Guardian_GCS_Setup_0.1.2-beta_x64.exe) | Windows 10 / 11 (x64) | 7.28 MB |                                                                                
+| [v0.1.2-beta](https://github.com/ab-mohammadi/Guardian-GCS/releases/tag/v0.1.2-beta) *(latest)* | [Download Guardian GCS v0.1.2-beta](https://github.com/ab-mohammadi/Guardian-GCS/releases/download/v0.1.2-beta/Guardian_GCS_Setup_0.1.2-beta_x64.exe) | Windows 10 / 11 (x64) | 7.28 MB |                                                                                
 
 All current and past builds are available on the [Releases](https://github.com/ab-mohammadi/Guardian-GCS/releases) page.
 
